@@ -54,7 +54,6 @@ page:
         template:
             type: templateselect
             filter: 'page-*.twig'
-    taxonomy: []
     sort: title
     recordsperpage: 100
     record_template: page.twig
@@ -71,7 +70,6 @@ quote:
             uses: quote
         quote:
             type: textarea
-    taxonomy: []
 
 # possible field types:
 # text - varchar(256) - input type text.
