@@ -7,7 +7,7 @@
     <h2><a href="{{ record.link }}">{{ record.title }}</a></h2>
     <p class="meta">Geplaatst op {{ record.date|date("d-m-Y")}}</p>
 
-    {{ record.excerpt(300) }}
+    {{ record.teaser }}
 
     <p class="read-more"><a href="{{ record.link }}">Lees verder »</a></p>
 </article>
