@@ -23,7 +23,7 @@ blog:
         body:
             type: html
             height: 300px
-    taxonomy: [ categories, tags ]
+    taxonomy: [ tags ]
     record_template: blog-detail.twig
     listing_template: blog-list.twig
     listing_records: 10
