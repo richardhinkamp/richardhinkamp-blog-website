@@ -1,5 +1,5 @@
 {
-    "hash": "74c429612afdd0f975f7b9c8fe13fae8",
+    "hash": "713e76e4f72c69ecb9d6b440d66d2df8",
     "packages": [
         {
             "name": "bobdenotter/bolt",
@@ -7,12 +7,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/richardhinkamp/bolt",
-                "reference": "a5272dee186327b8a06478d2b85c3b07cf71a8e8"
+                "reference": "e5183774d26676b4da57f05f9097ad038b9cbb53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/richardhinkamp/bolt/zipball/a5272dee186327b8a06478d2b85c3b07cf71a8e8",
-                "reference": "a5272dee186327b8a06478d2b85c3b07cf71a8e8",
+                "url": "https://api.github.com/repos/richardhinkamp/bolt/zipball/e5183774d26676b4da57f05f9097ad038b9cbb53",
+                "reference": "e5183774d26676b4da57f05f9097ad038b9cbb53",
                 "shasum": ""
             },
             "require": {
@@ -30,7 +30,7 @@
                 "guzzle/guzzle": ">=2.6.2",
                 "swiftmailer/swiftmailer": ">=4.1.2,<4.2-dev"
             },
-            "time": "2013-01-10 08:53:01",
+            "time": "2013-01-10 15:11:08",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -173,12 +173,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle",
-                "reference": "38327cbf4e34a47ea13e3ee021aa6d5a2a52b5f9"
+                "reference": "e4366e6d43dad8d251c62cb21dd6328e711e8d6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/guzzle/guzzle/archive/38327cbf4e34a47ea13e3ee021aa6d5a2a52b5f9.zip",
-                "reference": "38327cbf4e34a47ea13e3ee021aa6d5a2a52b5f9",
+                "url": "https://github.com/guzzle/guzzle/archive/e4366e6d43dad8d251c62cb21dd6328e711e8d6c.zip",
+                "reference": "e4366e6d43dad8d251c62cb21dd6328e711e8d6c",
                 "shasum": ""
             },
             "require": {
@@ -225,7 +225,7 @@
                 "zend/zend-cache": "2.0.0beta3",
                 "zend/zend-log": "2.0.0beta3"
             },
-            "time": "2013-01-10 07:11:35",
+            "time": "2013-01-10 23:30:22",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -319,12 +319,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/fabpot/Silex.git",
-                "reference": "d6243e37fcf78aadf679141ecb96b8eefed7a203"
+                "reference": "605f8262b6757e7721dcd8a0073a917e900f6862"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/fabpot/Silex/archive/d6243e37fcf78aadf679141ecb96b8eefed7a203.zip",
-                "reference": "d6243e37fcf78aadf679141ecb96b8eefed7a203",
+                "url": "https://github.com/fabpot/Silex/archive/605f8262b6757e7721dcd8a0073a917e900f6862.zip",
+                "reference": "605f8262b6757e7721dcd8a0073a917e900f6862",
                 "shasum": ""
             },
             "require": {
@@ -359,7 +359,7 @@
                 "symfony/css-selector": ">=2.1,<2.3-dev",
                 "symfony/dom-crawler": ">=2.1,<2.3-dev"
             },
-            "time": "2013-01-10 07:32:36",
+            "time": "2013-01-11 06:54:36",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -727,12 +727,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpKernel",
-                "reference": "daba04e69bc8cccc7d81d2ef82be81c36d783ae2"
+                "reference": "c40b512d466b132c8446a25a1e7fb0d60a49c65e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/HttpKernel/archive/daba04e69bc8cccc7d81d2ef82be81c36d783ae2.zip",
-                "reference": "daba04e69bc8cccc7d81d2ef82be81c36d783ae2",
+                "url": "https://github.com/symfony/HttpKernel/archive/c40b512d466b132c8446a25a1e7fb0d60a49c65e.zip",
+                "reference": "c40b512d466b132c8446a25a1e7fb0d60a49c65e",
                 "shasum": ""
             },
             "require": {
@@ -758,7 +758,7 @@
                 "symfony/dependency-injection": "2.1.*",
                 "symfony/finder": "2.1.*"
             },
-            "time": "2013-01-09 08:51:07",
+            "time": "2013-01-11 10:35:43",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -884,12 +884,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Routing",
-                "reference": "v2.2.0-BETA1"
+                "reference": "20b0af13fe2be7fa979f1829b0e23a56803a2c58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Routing/archive/v2.2.0-BETA1.zip",
-                "reference": "v2.2.0-BETA1",
+                "url": "https://github.com/symfony/Routing/archive/20b0af13fe2be7fa979f1829b0e23a56803a2c58.zip",
+                "reference": "20b0af13fe2be7fa979f1829b0e23a56803a2c58",
                 "shasum": ""
             },
             "require": {
@@ -899,14 +899,15 @@
                 "doctrine/common": ">=2.2,<2.4-dev",
                 "symfony/config": "2.2.*",
                 "symfony/yaml": "2.2.*",
-                "symfony/http-kernel": "2.2.*"
+                "symfony/http-kernel": "2.2.*",
+                "psr/log": ">=1.0,<2.0"
             },
             "suggest": {
                 "doctrine/common": ">=2.2,<2.4-dev",
                 "symfony/config": "2.2.*",
                 "symfony/yaml": "2.2.*"
             },
-            "time": "2013-01-07 11:20:12",
+            "time": "2013-01-10 16:57:14",
             "type": "library",
             "extra": {
                 "branch-alias": {
