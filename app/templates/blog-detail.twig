@@ -12,7 +12,7 @@
     {% setcontent entries = "blogs/latest/5" %}
     <ul class="latest-blogs">
     {% for entry in entries %}
-        <li><a href="{{ record.link }}"><span class="blog-date">{{ record.date|date("d-m-Y")}}</span> {{ record.title }}</a></li>
+        <li><a href="{{ entry.link }}"><span class="blog-date">{{ entry.date|date("d-m-Y")}}</span> {{ entry.title }}</a></li>
     {% endfor %}
     </ul>
 
