@@ -7,12 +7,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/richardhinkamp/bolt",
-                "reference": "e5183774d26676b4da57f05f9097ad038b9cbb53"
+                "reference": "34e4037a42a9ad5e7b4605e066f6a2249555048c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/richardhinkamp/bolt/zipball/e5183774d26676b4da57f05f9097ad038b9cbb53",
-                "reference": "e5183774d26676b4da57f05f9097ad038b9cbb53",
+                "url": "https://api.github.com/repos/richardhinkamp/bolt/zipball/34e4037a42a9ad5e7b4605e066f6a2249555048c",
+                "reference": "34e4037a42a9ad5e7b4605e066f6a2249555048c",
                 "shasum": ""
             },
             "require": {
@@ -30,7 +30,7 @@
                 "guzzle/guzzle": ">=2.6.2",
                 "swiftmailer/swiftmailer": ">=4.1.2,<4.2-dev"
             },
-            "time": "2013-01-10 15:11:08",
+            "time": "2013-01-11 13:56:41",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -629,12 +629,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Form",
-                "reference": "ef499c49a08833089ebfb175e28f48ac5d3e8a53"
+                "reference": "36f95a1fe529b80794154f0778d1e8e9147eb45d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Form/archive/ef499c49a08833089ebfb175e28f48ac5d3e8a53.zip",
-                "reference": "ef499c49a08833089ebfb175e28f48ac5d3e8a53",
+                "url": "https://github.com/symfony/Form/archive/36f95a1fe529b80794154f0778d1e8e9147eb45d.zip",
+                "reference": "36f95a1fe529b80794154f0778d1e8e9147eb45d",
                 "shasum": ""
             },
             "require": {
@@ -651,7 +651,7 @@
                 "symfony/validator": "2.1.*",
                 "symfony/http-foundation": "2.1.*"
             },
-            "time": "2013-01-09 08:51:07",
+            "time": "2013-01-11 13:37:17",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -790,12 +790,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Locale",
-                "reference": "d1819fbf750d58ad1d2f6213c337afe8081b75f0"
+                "reference": "3ad6a5129809b3815a2b9056eee470dc2877717f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Locale/archive/d1819fbf750d58ad1d2f6213c337afe8081b75f0.zip",
-                "reference": "d1819fbf750d58ad1d2f6213c337afe8081b75f0",
+                "url": "https://github.com/symfony/Locale/archive/3ad6a5129809b3815a2b9056eee470dc2877717f.zip",
+                "reference": "3ad6a5129809b3815a2b9056eee470dc2877717f",
                 "shasum": ""
             },
             "require": {
@@ -804,7 +804,7 @@
             "suggest": {
                 "ext-intl": ">=5.3.3"
             },
-            "time": "2013-01-09 08:51:07",
+            "time": "2013-01-10 04:41:59",
             "type": "library",
             "installation-source": "source",
             "autoload": {
