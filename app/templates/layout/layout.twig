@@ -5,6 +5,9 @@
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    {% if app.config.general.debug == true %}
+        <meta content="NOINDEX,NOFOLLOW" name="ROBOTS">
+    {% endif %}
     <title>{% if record.title is defined %}{{ record.title|striptags }} - {% endif %}{{ app.config.general.sitename }}</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -12,7 +15,19 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Fredericka+the+Great|Swanky+and+Moo+Moo|&amp;amp;subset=latin" >
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic&amp;amp;subset=latin,latin-ext" >
     <link rel="stylesheet" href="/css/layout.css"/>
-
+    {% if app.config.general.debug != true %}
+        <!-- Google Code for Analytics -->
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-37714531-1']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    {% endif %}
 </head>
 
 <body>
