@@ -11,15 +11,8 @@ blog:
         slug:
             type: slug
             uses: title
-        date:
-            type: date
-        image:
-            type: image
         teaser:
-            type: html
-            height: 150px
-        video:
-            type: video
+            type: textarea
         body:
             type: html
             height: 300px
@@ -27,7 +20,6 @@ blog:
     record_template: blog-detail.twig
     listing_template: blog-list.twig
     listing_records: 10
-    sort: date DESC
     recordsperpage: 10
     rss:
       enabled: true
@@ -46,8 +38,7 @@ page:
             type: slug
             uses: title
         introduction:
-            type: html
-            height: 150px
+            type: textarea
         body:
             type: html
             height: 300px
