@@ -20,6 +20,7 @@ blog:
     record_template: blog-detail.twig
     listing_template: blog-list.twig
     listing_records: 10
+    sort: datepublish DESC
     recordsperpage: 10
     rss:
       enabled: true
