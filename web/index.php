@@ -1,3 +1,3 @@
 <?php
 
-require_once( '../vendor/bobdenotter/bolt/index.php' );
+require_once( '../vendor/bolt/bolt/index.php' );
