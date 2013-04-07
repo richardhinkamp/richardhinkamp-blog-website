@@ -15,7 +15,7 @@ blog:
             type: textarea
         body:
             type: html
-            height: 300px
+            height: 500px
     taxonomy: [ tags ]
     record_template: blog-detail.twig
     listing_template: blog-list.twig
@@ -42,7 +42,7 @@ page:
             type: textarea
         body:
             type: html
-            height: 300px
+            height: 500px
         template:
             type: templateselect
             filter: 'page-*.twig'
