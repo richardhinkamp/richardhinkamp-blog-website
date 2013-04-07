@@ -145,6 +145,14 @@ div.quotes-container
 {
     margin-right: 0;
     margin-top: 0;
+
+    img {
+        max-width: 100%;
+    }
+
+    p img {
+        margin: 0 1em 1em;
+    }
 }
 
 .box
@@ -155,6 +163,8 @@ div.quotes-container
     h3
     {
         margin: 0;
+        margin-bottom: 0.5em;
+        line-height: normal;
 
         a {
             color: #333333;
@@ -163,6 +173,8 @@ div.quotes-container
 
     .contentarea
     {
+        padding-top: 0;
+
         ul
         {
             margin: 0;
@@ -394,4 +406,27 @@ p.meta {
     color: #333333;
     font-size: 0.9em;
     font-style: italic;
+}
+
+.news-intro {
+    margin-bottom: 1em;
+
+
+    h2 {
+        line-height: normal;
+        margin: 0;
+    }
+
+    p.meta {
+        margin: 0;
+    }
+}
+
+article.blog {
+
+    h1 {
+        line-height: normal;
+        margin-bottom: 0;
+    }
+
 }
