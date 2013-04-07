@@ -8,7 +8,7 @@
     {% if app.config.general.debug == true %}
         <meta content="NOINDEX,NOFOLLOW" name="ROBOTS">
     {% endif %}
-    <title>{% if record.title is defined %}{{ record.title|striptags }} - {% endif %}{{ app.config.general.sitename }}</title>
+    <title>{% if record.title is defined %}{{ record.title|striptags }}{% else %}{{ app.config.general.sitename }}{% endif %}</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
@@ -40,7 +40,7 @@
                 </h1>
 
                 <h2>
-                    Mijn weblog/prototype site
+                    Mijn blog
                     {#<span class="version">v {{ app.version }}</span>#}
                 </h2>
             </div>
