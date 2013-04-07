@@ -1,6 +1,5 @@
-$webroot: "/";
+@import "variables";
 
-@import "../../vendor/twitter/bootstrap/twitter/bootstrap/lib/variables";
 @import "../../vendor/twitter/bootstrap/twitter/bootstrap/lib/mixins";
 
 @import "mixins/linear-gradient";
