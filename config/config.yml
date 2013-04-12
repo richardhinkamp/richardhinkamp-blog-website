@@ -12,13 +12,19 @@ homepage: page/home
 homepage_template: index.twig
 
 # The default content for the 404 page. Uses the 'record_template' template by default.
-notfound: 
+notfound: page/not-found
 
 # The theme to use. Be sure to copy the theme/default folder, and change the
 # name here accordingly. Don't edit the templates in theme/default, because
 # they _will_ get updated in next releases
 theme: rh
 theme_path: /app/templates
+
+# The locale that'll be used by the application. If no locale is set the
+# fallback locale is 'en_GB'. For available options, see: http://docs.bolt.cm/locales
+locale: nl_NL
+#timezone: Zulu
+
 
 app_web_path: /bolt-public/
 
