@@ -1,5 +1,5 @@
 {
-    "hash": "9cca73a29d0def8944d633d6283922d3",
+    "hash": "23c18b7b0217a40c48c5f42d562ceedf",
     "packages": [
         {
             "name": "bolt/bolt",
@@ -7,18 +7,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/bolt.git",
-                "reference": "43643e91509c00d004ae81731bff8581a3e4afd5"
+                "reference": "0c18498c498d6bf0eb33fea04cfa7d83f3cb7b24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/bolt/zipball/43643e91509c00d004ae81731bff8581a3e4afd5",
-                "reference": "43643e91509c00d004ae81731bff8581a3e4afd5",
+                "url": "https://api.github.com/repos/bolt/bolt/zipball/0c18498c498d6bf0eb33fea04cfa7d83f3cb7b24",
+                "reference": "0c18498c498d6bf0eb33fea04cfa7d83f3cb7b24",
                 "shasum": ""
             },
             "require": {
                 "dflydev/markdown": "1.0.*",
                 "doctrine/dbal": "2.4.*@dev",
-                "filp/whoops": "dev-master",
+                "filp/whoops": "1.*",
                 "guzzle/guzzle": "3.3.*",
                 "hautelook/phpass": "dev-master",
                 "htmlawed/htmlawed": "dev-master",
@@ -60,7 +60,7 @@
                 "silex",
                 "symfony"
             ],
-            "time": "2013-04-07 10:25:45"
+            "time": "2013-04-14 15:09:44"
         },
         {
             "name": "dflydev/markdown",
@@ -390,12 +390,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "5a8297a3795346f8e0c6fde9c42e7abbb63280c9"
+                "reference": "4485d19634219ee791fe631657b31069e0de277d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/5a8297a3795346f8e0c6fde9c42e7abbb63280c9",
-                "reference": "5a8297a3795346f8e0c6fde9c42e7abbb63280c9",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/4485d19634219ee791fe631657b31069e0de277d",
+                "reference": "4485d19634219ee791fe631657b31069e0de277d",
                 "shasum": ""
             },
             "require": {
@@ -407,7 +407,7 @@
                 "symfony/console": "2.*"
             },
             "suggest": {
-                "symfony/console": "For helpful console commands such as SQL execution and import of files."
+                "symfony/console": "Allows use of the command line interface"
             },
             "type": "library",
             "extra": {
@@ -452,7 +452,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2013-04-06 13:10:42"
+            "time": "2013-04-14 16:29:11"
         },
         {
             "name": "doctrine/inflector",
@@ -571,16 +571,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "dev-master",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "32c322f08b3e206c68af0b763c195b216a47611e"
+                "reference": "1.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/32c322f08b3e206c68af0b763c195b216a47611e",
-                "reference": "32c322f08b3e206c68af0b763c195b216a47611e",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/1.0.1",
+                "reference": "1.0.1",
                 "shasum": ""
             },
             "require": {
@@ -617,7 +617,7 @@
                 "silex-provider",
                 "whoops"
             ],
-            "time": "2013-04-01 15:01:17"
+            "time": "2013-04-12 11:09:30"
         },
         {
             "name": "guzzle/guzzle",
@@ -840,6 +840,37 @@
             "time": "2013-02-11 14:41:22"
         },
         {
+            "name": "jlong/sass-twitter-bootstrap",
+            "version": "v2.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jlong/sass-twitter-bootstrap.git",
+                "reference": "v2.3.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jlong/sass-twitter-bootstrap/zipball/v2.3.1",
+                "reference": "v2.3.1",
+                "shasum": ""
+            },
+            "type": "library",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "A sass port of the sleek, intuitive, and powerful front-end framework for faster and easier web development.",
+            "homepage": "http://github.com/jlong/sass-twitter-bootstrap/",
+            "keywords": [
+                "bootstrap",
+                "css",
+                "sass"
+            ],
+            "support": {
+                "source": "https://github.com/jlong/sass-twitter-bootstrap/tree/v2.3.1",
+                "issues": "https://github.com/jlong/sass-twitter-bootstrap/issues"
+            },
+            "time": "2013-04-13 13:32:46"
+        },
+        {
             "name": "pimple/pimple",
             "version": "v1.0.2",
             "source": {
@@ -963,12 +994,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Silex.git",
-                "reference": "31139babedb2a4f504737d1d8c5255fca102dae2"
+                "reference": "1cd7f3f050b78dae4458d93892355720f56659f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Silex/zipball/31139babedb2a4f504737d1d8c5255fca102dae2",
-                "reference": "31139babedb2a4f504737d1d8c5255fca102dae2",
+                "url": "https://api.github.com/repos/fabpot/Silex/zipball/1cd7f3f050b78dae4458d93892355720f56659f9",
+                "reference": "1cd7f3f050b78dae4458d93892355720f56659f9",
                 "shasum": ""
             },
             "require": {
@@ -981,6 +1012,7 @@
             },
             "require-dev": {
                 "doctrine/dbal": ">=2.2.0,<2.4.0-dev",
+                "monolog/monolog": ">=1.4,<2.0,>=1.4.1",
                 "swiftmailer/swiftmailer": "4.2.*",
                 "symfony/browser-kit": ">=2.1,<2.3-dev",
                 "symfony/config": ">=2.1,<2.3-dev",
@@ -1036,20 +1068,20 @@
             "keywords": [
                 "microframework"
             ],
-            "time": "2013-04-03 19:59:11"
+            "time": "2013-04-11 12:23:56"
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v4.3.0",
+            "version": "v4.3.1",
             "source": {
                 "type": "git",
-                "url": "git://github.com/swiftmailer/swiftmailer.git",
-                "reference": "v4.3.0"
+                "url": "https://github.com/swiftmailer/swiftmailer.git",
+                "reference": "v4.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/swiftmailer/swiftmailer/archive/v4.3.0.zip",
-                "reference": "v4.3.0",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/v4.3.1",
+                "reference": "v4.3.1",
                 "shasum": ""
             },
             "require": {
@@ -1085,7 +1117,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2013-01-08 15:50:34"
+            "time": "2013-04-11 10:22:09"
         },
         {
             "name": "symfony/config",
@@ -1959,16 +1991,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.12.2",
+            "version": "v1.12.3",
             "source": {
                 "type": "git",
-                "url": "git://github.com/fabpot/Twig.git",
-                "reference": "v1.12.2"
+                "url": "https://github.com/fabpot/Twig.git",
+                "reference": "v1.12.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/v1.12.2",
-                "reference": "v1.12.2",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/v1.12.3",
+                "reference": "v1.12.3",
                 "shasum": ""
             },
             "require": {
@@ -2004,38 +2036,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-02-09 18:21:53"
-        },
-        {
-            "name": "twitter/bootstrap",
-            "version": "v2.2.2",
-            "target-dir": "twitter/bootstrap",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jlong/sass-twitter-bootstrap",
-                "reference": "v2.2.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jlong/sass-twitter-bootstrap/zipball/v2.2.2",
-                "reference": "v2.2.2",
-                "shasum": ""
-            },
-            "type": "library",
-            "license": [
-                "Apache-2.0"
-            ],
-            "description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development.",
-            "homepage": "http://twitter.github.com/bootstrap/",
-            "keywords": [
-                "bootstrap",
-                "css"
-            ],
-            "support": {
-                "source": "https://github.com/jlong/sass-twitter-bootstrap/tree/v2.2.2",
-                "issues": "https://github.com/jlong/sass-twitter-bootstrap/issues"
-            },
-            "time": "2012-12-09 20:32:58"
+            "time": "2013-04-08 12:40:11"
         }
     ],
     "packages-dev": [
@@ -2049,7 +2050,6 @@
         "silex/silex": 20,
         "htmlawed/htmlawed": 20,
         "hautelook/phpass": 20,
-        "filp/whoops": 20,
         "doctrine/dbal": 20,
         "doctrine/common": 20,
         "bolt/bolt": 20,

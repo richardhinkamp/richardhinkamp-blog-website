@@ -1,10 +1,14 @@
 @import "variables";
 
-@import "../../vendor/twitter/bootstrap/twitter/bootstrap/lib/mixins";
+@import "../../vendor/jlong/sass-twitter-bootstrap/lib/mixins";
 
 @import "mixins/linear-gradient";
 
-@import "../../vendor/twitter/bootstrap/twitter/bootstrap/lib/reset";
+@import "../../vendor/jlong/sass-twitter-bootstrap/lib/reset";
+@import "../../vendor/jlong/sass-twitter-bootstrap/lib/layouts";
+@import "../../vendor/jlong/sass-twitter-bootstrap/lib/navs";
+@import "../../vendor/jlong/sass-twitter-bootstrap/lib/navbar";
+@import "../../vendor/jlong/sass-twitter-bootstrap/lib/responsive-navbar";
 
 @import "style";
 //@import "../../lib/bsl/scss/generic-styling";
@@ -13,7 +17,7 @@
 //@import "../../lib/event/scss/item.scss";
 
 @import "zenlike";
-@import "../../vendor/twitter/bootstrap/twitter/bootstrap/lib/pagination";
+@import "../../vendor/jlong/sass-twitter-bootstrap/lib/pagination";
 
 *
 {
@@ -125,6 +129,7 @@ div.quotes-container
 {
     width: 95%;
     max-width: 1100px;
+    margin-top: 25px;
 }
 
 #primarycontainer,
