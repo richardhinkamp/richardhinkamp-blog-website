@@ -1,20 +1,13 @@
 @import "variables";
 
-@import "../../vendor/jlong/sass-twitter-bootstrap/lib/mixins";
-
 @import "mixins/linear-gradient";
 
-@import "../../vendor/jlong/sass-twitter-bootstrap/lib/reset";
+@import "style";
+
 @import "../../vendor/jlong/sass-twitter-bootstrap/lib/layouts";
 @import "../../vendor/jlong/sass-twitter-bootstrap/lib/navs";
 @import "../../vendor/jlong/sass-twitter-bootstrap/lib/navbar";
 @import "../../vendor/jlong/sass-twitter-bootstrap/lib/responsive-navbar";
-
-@import "style";
-//@import "../../lib/bsl/scss/generic-styling";
-
-//@import "../../lib/news/scss/item.scss";
-//@import "../../lib/event/scss/item.scss";
 
 @import "zenlike";
 @import "../../vendor/jlong/sass-twitter-bootstrap/lib/pagination";

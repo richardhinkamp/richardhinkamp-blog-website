@@ -39,8 +39,6 @@ audio:not([controls]) {
     display: none;
 }
 
-@import "../../vendor/jlong/sass-twitter-bootstrap/lib/variables";
-
 @import "../../vendor/jlong/sass-twitter-bootstrap/lib/mixins";
 @import "../../vendor/jlong/sass-twitter-bootstrap/lib/reset";
 @import "../../vendor/jlong/sass-twitter-bootstrap/lib/type";

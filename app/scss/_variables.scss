@@ -1,8 +1,8 @@
 $webroot: "/";
 
 $linkColor:             #B96D00;
-$iconSpritePath:          "/bolt-public/view/img/glyphicons-halflings.png"; // TODO
-$iconWhiteSpritePath:     "/bolt-public/view/img/glyphicons-halflings-white.png"; // TODO
+$iconSpritePath:          "/img/bootstrap/glyphicons-halflings.png";
+$iconWhiteSpritePath:     "/img/bootstrap/glyphicons-halflings-white.png";
 
 @import "../../vendor/jlong/sass-twitter-bootstrap/lib/variables";
 
