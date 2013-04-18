@@ -1,5 +1,9 @@
 {
-    "hash": "42bf556cfe4183aef25bc9e34f98416f",
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "f2487c542b8fdaeb83078e2498c2b9cd",
     "packages": [
         {
             "name": "bolt/bolt",
@@ -7,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bolt/bolt.git",
-                "reference": "a1077014ddf77070448ae1680ade8d45dfedb086"
+                "reference": "81eb3c5224a1b6393cc1505caa83fd5d9a3c1f85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bolt/bolt/zipball/a1077014ddf77070448ae1680ade8d45dfedb086",
-                "reference": "a1077014ddf77070448ae1680ade8d45dfedb086",
+                "url": "https://api.github.com/repos/bolt/bolt/zipball/81eb3c5224a1b6393cc1505caa83fd5d9a3c1f85",
+                "reference": "81eb3c5224a1b6393cc1505caa83fd5d9a3c1f85",
                 "shasum": ""
             },
             "require": {
@@ -63,7 +67,7 @@
                 "source": "https://github.com/bolt/bolt/tree/master",
                 "issues": "https://github.com/bolt/bolt/issues"
             },
-            "time": "2013-04-15 14:15:07"
+            "time": "2013-04-17 19:04:36"
         },
         {
             "name": "dflydev/markdown",
@@ -319,12 +323,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/common.git",
-                "reference": "33f906e257510247d0bcd60b8b54f47cfb51e3ed"
+                "reference": "3506be7467dbd4f923691a00555cf80065d32e59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/common/zipball/33f906e257510247d0bcd60b8b54f47cfb51e3ed",
-                "reference": "33f906e257510247d0bcd60b8b54f47cfb51e3ed",
+                "url": "https://api.github.com/repos/doctrine/common/zipball/3506be7467dbd4f923691a00555cf80065d32e59",
+                "reference": "3506be7467dbd4f923691a00555cf80065d32e59",
                 "shasum": ""
             },
             "require": {
@@ -372,7 +376,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -385,7 +389,7 @@
                 "persistence",
                 "spl"
             ],
-            "time": "2013-03-24 17:52:59"
+            "time": "2013-04-16 21:50:30"
         },
         {
             "name": "doctrine/dbal",
