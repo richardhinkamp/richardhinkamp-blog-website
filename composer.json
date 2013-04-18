@@ -1,6 +1,6 @@
 {
-    "name": "richardhinkamp/website",
-    "description": "Website richard.hinkamp.nl, part R&D, part personal site.",
+    "name": "richardhinkamp/richardhinkamp-blog-website",
+    "description": "Website blog.richardhinkamp.nl, personal weblog.",
     "autoload": {
         "psr-0": {"RH": "./"}
     },
