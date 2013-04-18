@@ -219,7 +219,7 @@ div.quotes-container
 
 body
 {
-    padding: 15px 0;
+    padding: 0;
 }
 
 #header
@@ -393,12 +393,7 @@ html {
 
 body
 {
-    @include linear-gradient-top-bottom( #ab8c6f, #ccad91 );
-}
-
-#upbg
-{
-    @include linear-gradient-top-bottom-semitranparent( #62462e, rgba( 171, 140, 111, 0 ) );
+    @include linear-gradient-top-bottom( #62462e, #ccad91 );
 }
 
 #menubottom
