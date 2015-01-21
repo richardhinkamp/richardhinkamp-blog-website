@@ -41,10 +41,17 @@ div.quote p
 {
     text-align: left;
 
+    &.quote-text
+    {
+        margin-bottom: 0;
+    }
+
     &.quote-name
     {
+        margin-top: 0.5em;
         font-style: italic;
         text-align: right;
+        margin-bottom: 0;
     }
 }
 
@@ -113,8 +120,9 @@ div.quotes-container
 
     div.quote
     {
-        width: 190px;
         margin: 10px;
+        position: inherit;
+        padding: 0.5em 1.5em;
     }
 }
 

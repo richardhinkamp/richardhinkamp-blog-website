@@ -13,16 +13,3 @@
     </div>
 
 {% endblock %}
-
-{% block js_files %}
-    <script type="text/javascript" src="/js/jquery.isotope.min.js"></script>
-    <script type="text/javascript">
-        $(function ()
-        {
-            $('.quotes-container').isotope({
-                itemSelector : '.quote',
-                layoutMode : 'masonry'
-            });
-        });
-    </script>
-{% endblock %}
