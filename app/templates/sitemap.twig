@@ -1,0 +1,9 @@
+{% extends "layout/layout.twig" %}
+
+{% block title_text %}{{ __('Sitemap') }}{% endblock %}
+
+{% block page_content %}
+    <h1>{{ __('Sitemap') }}</h1>
+    {% include 'assets/_sitemap_list.twig' %}
+{% endblock %}
+

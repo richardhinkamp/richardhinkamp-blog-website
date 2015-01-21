@@ -6,3 +6,4 @@ web/files/*
 web/kcfinder
 config/config_local.yml
 web/upload/*
+cache/

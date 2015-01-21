@@ -1,7 +1,7 @@
 # This file defines the contenttypes on the website. See the documentation for
 # details: http://docs.bolt.cm/content#defining-contenttypes
 
-blog:
+blogs:
     name: Blogs
     singular_name: Blog
     fields:
@@ -28,7 +28,7 @@ blog:
       feed_template: rss.twig
       content_length: 250
 
-page:
+pages:
     name: Pages
     singular_name: Page
     fields:
@@ -50,7 +50,7 @@ page:
     recordsperpage: 100
     record_template: page.twig
 
-quote:
+quotes:
     name: Quotes
     singular_name: Quote
     fields:

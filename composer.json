@@ -8,20 +8,18 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/bolt/krumo"
+            "url": "https://github.com/richardhinkamp/kcfinder"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/richardhinkamp/kcfinder"
+            "url": "https://github.com/richardhinkamp/bolt"
         }
     ],
 
     "require": {
-        "bolt/krumo": "dev-master",
-        "erusev/parsedown": "dev-master",
+        "ircmaxell/random-lib": "dev-master",
         "hautelook/phpass": "dev-master",
-        "garetjax/phpbrowscap": "dev-master",
-        "bolt/bolt": "1.4.*",
+        "bolt/bolt": "dev-release/1.6",
         "richardhinkamp/kcfinder": "dev-master",
         "jlong/sass-twitter-bootstrap": "2.3.*"
     },
