@@ -100,7 +100,7 @@ p.date {
 }
 
 body {
-	border-top:5px solid #092832;
+	border-top:5px solid #222;
 }
 
 header, footer, section, article {
@@ -172,10 +172,7 @@ header.welcome {
 
 .meta {
 	text-align:center;
-}
-
-ul.blogs {
-	margin-top: 1em;
+	margin-bottom: 0.5em;
 }
 
 ul.quotes li {
@@ -190,10 +187,6 @@ ul.quotes li {
 		display: block;
 		font-style: italic;
 	}
-}
-
-.sitemap > ul {
-	margin-top: 1em;
 }
 
 .sitemap ul {

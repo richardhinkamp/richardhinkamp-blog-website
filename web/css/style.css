@@ -119,7 +119,7 @@ p.date {
     color: #727272; }
 
 body {
-  border-top: 5px solid #092832; }
+  border-top: 5px solid #222; }
 
 header, footer, section, article {
   display: block;
@@ -171,10 +171,8 @@ header.welcome {
       color: #fff; }
 
 .meta {
-  text-align: center; }
-
-ul.blogs {
-  margin-top: 1em; }
+  text-align: center;
+  margin-bottom: 0.5em; }
 
 ul.quotes li {
   padding: 0.5em;
@@ -184,9 +182,6 @@ ul.quotes li {
   ul.quotes li .by {
     display: block;
     font-style: italic; }
-
-.sitemap > ul {
-  margin-top: 1em; }
 
 .sitemap ul {
   list-style: square; }
