@@ -1,7 +1,11 @@
 {% extends "layout/layout.twig" %}
 
 {% block page_content %}
-    <h1>{{ page.title }}</h1>
-    {{ page.body }}
+    <article>
+        <div class="meta">
+            <h1>{{ page.title }}</h1>
+        </div>
+        {{ page.body }}
+    </article>
 {% endblock %}
 

@@ -3,9 +3,5 @@
 template: sitemap.twig
 xml_template: assets/sitemap_xml.twig
 
-ignore:
-  - /page/home
-  - /page/not-found
-
 ignore_contenttype:
-  - quotes
+  - quote

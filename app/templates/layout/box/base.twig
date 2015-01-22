@@ -1,7 +1,0 @@
-<div class="box">
-    {% if title is defined %}<h3>{% if link is defined %}<a href="{{ link }}">{% endif %}{{ title }}{% if link is defined %}</a>{% endif %}</h3>{% endif %}
-    <div class="contentarea {% block contentarea_class %}{% endblock %}">
-        {% block content %}
-        {% endblock %}
-    </div>
-</div>

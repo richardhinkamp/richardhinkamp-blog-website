@@ -1,29 +1,14 @@
 {% extends "layout/layout.twig" %}
 
 {% block page_content %}
+    <article>
+        <div class="meta">
+            <h1><a href="{{ record.link }}">{{ record.title }}</a></h1>
 
-    <article class="blog">
-        <h1><a href="{{ record.link }}">{{ record.title }}</a></h1>
-        <p class="meta">Geplaatst op {{ record.datepublish|date("d-m-Y")}}</p>
-        <div class="blog-body">{{ record.body }}</div>
-        {% if record.taxonomy is defined %}
-            {% for type, values in record.taxonomy %}
-                Tags:
-                <ul class="inline">
-                {% for link, value in values %}
-                    <li></li><a href="{{ link }}">{{ value }}</a></li>
-                {% endfor %}
-                </ul>
-            {% endfor %}
-        {% endif %}
+            <p class="date">
+                Geplaatst op <strong>{{ record.datepublish|date("d-m-Y")}}</strong>
+            </p>
+        </div>
+        {{ record.body }}
     </article>
-
-    <h2>Laatste berichten</h2>
-    {% setcontent entries = "blogs/latest/5" %}
-    <ul class="latest-blogs">
-    {% for entry in entries %}
-        <li><a href="{{ entry.link }}"><span class="blog-date">{{ entry.datepublish|date("d-m-Y")}}</span> {{ entry.title }}</a></li>
-    {% endfor %}
-    </ul>
-
 {% endblock %}

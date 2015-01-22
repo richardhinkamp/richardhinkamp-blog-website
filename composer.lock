@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/richardhinkamp/bolt.git",
-                "reference": "adca266bc0ef116058a3b62fd8923ca5a9ca915d"
+                "reference": "0bd634ddd900f431d63a6fd317cfaa7c3e9961fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/richardhinkamp/bolt/zipball/adca266bc0ef116058a3b62fd8923ca5a9ca915d",
-                "reference": "adca266bc0ef116058a3b62fd8923ca5a9ca915d",
+                "url": "https://api.github.com/repos/richardhinkamp/bolt/zipball/0bd634ddd900f431d63a6fd317cfaa7c3e9961fc",
+                "reference": "0bd634ddd900f431d63a6fd317cfaa7c3e9961fc",
                 "shasum": ""
             },
             "require": {
@@ -77,7 +77,7 @@
             "support": {
                 "source": "https://github.com/richardhinkamp/bolt/tree/release/1.6"
             },
-            "time": "2015-01-21 19:05:13"
+            "time": "2015-01-22 08:38:01"
         },
         {
             "name": "bolt/dumper",

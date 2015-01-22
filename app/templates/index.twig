@@ -1,8 +1,6 @@
 {% extends "layout/layout.twig" %}
 
 {% block page_content %}
-    <h1>{{ page.title }}</h1>
-    {{ page.body }}
 {% setcontent entries = "blogs/latest/5" %}
 
 {% for entry in entries %}

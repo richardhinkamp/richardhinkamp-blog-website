@@ -1,161 +1,54 @@
-<!doctype html>
-<!--[if lt IE 9]><html class="ie"><![endif]-->
-<!--[if gte IE 9]><!--><html><!--<![endif]-->
-
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    {% if app.config.get('general/debug') == true %}
-        <meta content="NOINDEX,NOFOLLOW" name="ROBOTS">
-    {% endif %}
-    <title>{% if record.title is defined %}{{ record.title|striptags }}{% else %}{{ app.config.get('general/sitename') }}{% endif %}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="author" content="Steve Smith">
+    <title>Ordered List</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-    <link rel="stylesheet" href="/css/layout.css"/>
-    <link href="/favicon.ico" type="images/ico" rel="SHORTCUT ICON">
 </head>
-
 <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container">
-                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="brand no-underline" href="http://www.richardhinkamp.nl/" target="_blank">Richard Hinkamp</a>
-                <div class="nav-collapse collapse">
-                    <ul class="nav">
-                        <li><a href="http://cv.richardhinkamp.nl/">Curriculum Vitae</a></li>
-                        <li class="active"><a href="http://blog.richardhinkamp.nl/" target="_blank">Persoonlijk weblog</a></li>
-                        <li><a href="http://dev.richardhinkamp.nl/" target="_blank">Development blog</a></li>
-                    </ul>
-                </div><!--/.nav-collapse -->
-            </div>
-        </div>
+
+<header class="welcome">
+    <div class="wrapper">
+        <h1><a href="/">Richard Hinkamp</a></h1>
+        <p class="intro">Ik plaats af en toe een <a href="/blogs">blog</a> of een <a href="/quotes">quote</a>.</p>
     </div>
+</header>
 
-    {% block body_content %}
-    <div id="outer">
-        <div id="header">
-            <div id="headercontent">
-                <h1>
-                    <a href="/" title="Richard Hinkamp">Richard Hinkamp</a>
-                </h1>
 
-                <h2>
-                    Mijn blog
-                    {#<span class="version">v {{ app.version }}</span>#}
-                </h2>
-            </div>
-        </div>
-        <div id="headerpic"
-             {#{% if header_image.url %}style="background-image: url({{ header_image.url }}); background-position: top {{ header_image.align }};"{% endif %}#}></div>
-        <div id="menu">
-            {{ menu() }}
-        </div>
-        <div id="menubottom"></div>
-        <div id="content">
-            {% block content %}
-                <div id="primarycontainer">
-                    <div id="primarycontent">
-                        {% block primarycontent %}
-                            {% block page_content %}{% endblock %}
-                            {# {% block social_tools %}
-                                <div id="social-tools">
-                                    <div id="fb-root"></div>
-                                    <script type="text/javascript">(function (d, s, id) {
-                                        var js, fjs = d.getElementsByTagName(s)[0];
-                                        if (d.getElementById(id)) {
-                                            return;
-                                        }
-                                        js = d.createElement(s);
-                                        js.id = id;
-                                        js.src = "//connect.facebook.net/nl_NL/all.js#xfbml=1";
-                                        fjs.parentNode.insertBefore(js, fjs);
-                                    }(document, "script", "facebook-jssdk"));</script>
-                                    <div class="button fb-like"
-                                         data-href="{{ request.protocol }}://{{ request.host }}{{ request.url }}" data-send="false"
-                                         data-layout="box_count" data-show-faces="false"></div>
-                                    <script type="text/javascript" src="https://apis.google.com/js/plusone.js">{
-                                        lang: 'nl'
-                                    }</script>
-                                    <div class="button google-plusone">
-                                        <g:plusone size="tall"></g:plusone>
-                                    </div>
-                                    <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
-                                    <div class="button"><a href="https://twitter.com/share" class="twitter-share-button"
-                                                           title="Tweet" data-text="{{ page.title }}" data-count="vertical"
-                                                           data-via="RichardHinkamp">Tweet</a></div>
-                                </div>
-                            {% endblock %} #}
-                            {% block footercontent %}
-                                {% if page.footer_html is defined %}
-                                    {% autoescape false %}{{ page.footer_html }}{% endautoescape %}
-                                {% endif %}
-                            {% endblock %}
-                        {% endblock %}
-                    </div>
-                </div>
-                <div id="secondarycontent">
-                    <aside>
-                        {% setcontent about = "page/about" %}
+{% block page_content %}{% endblock %}
 
-                        {# check if there's a page with slug 'about' #}
-                        {% if about.title is defined %}
-                            {% include 'layout/box/about.twig' with {'title': about.title, 'about_text': about.introduction|raw} only %}
-                        {% endif %}
 
-                        {% setcontent quotes = "quotes/latest/25" %}
-                        {% include 'layout/box/quote.twig' with {'quote': random(quotes)} only %}
 
-                        {% setcontent entries = "blogs/latest/5" %}
+<section class="paginator">
 
-                        {% include 'layout/box/blog.twig' with {'title': 'Laatste berichten', 'items': entries, 'link': '/blogs'} only %}
 
-                    </aside>
-                </div>
-            {% endblock %}
-        </div>
-        <div id="footer">
-            <div class="left">
-                &copy; 2011-{{ "now"|date("Y") }} Richard Hinkamp - <a href="/sitemap" title="Sitemap">Sitemap</a>
-            </div>
-            <div class="right">
-                Design by <a href="http://www.nodethirtythree.com/" title="Design By NodeThirtyThree Design">NodeThirtyThree Design</a> -
-                This site is powered by <a href="http://bolt.cm" target="_blank">Bolt</a>: Sophisticated, lightweight & simple CMS.
-            </div>
-        </div>
-    </div>
-    {% endblock %}
+</section>
 
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="/js/bootstrap/bootstrap-collapse.js"></script>
-    <!--[if lt IE 9]>
-    <script type="text/javascript" src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-    <script type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    {% block js_files %}{% endblock %}
 
-    {% if app.config.get('general/debug') == true %}
-        <script type="text/javascript">
+<footer>
+    <p>&copy; 2011-{{ "now"|date("Y") }} Richard Hinkamp - <a href="/sitemap" title="Sitemap">Sitemap</a></p>
+</footer>
 
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-26834253-1']);
-            _gaq.push(['_trackPageview']);
+{% block js_files %}{% endblock %}
 
-            (function() {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
+{% if app.config.get('general/debug') == true %}
+    <script type="text/javascript">
 
-        </script>
-    {% endif %}
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-26834253-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+{% endif %}
 </body>
-
 </html>
-

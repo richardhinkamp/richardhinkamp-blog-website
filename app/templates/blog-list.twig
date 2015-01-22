@@ -1,9 +1,16 @@
 {% extends "layout/layout.twig" %}
 
 {% block page_content %}
-{% for record in records %}
-    {% include 'blocks/blog-intro.twig' with {'record': record} only %}
-{% endfor %}
-
-{{ pager() }}
+    <article>
+        <div class="meta">
+            <h1>Blogs</h1>
+        </div>
+        <ul class="blogs">
+            {% for record in records %}
+                <li>
+                    <a href="{{ record.link }}">{{ record.datepublish|date("d-m-Y")}} {{ record.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </article>
 {% endblock %}
