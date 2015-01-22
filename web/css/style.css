@@ -129,7 +129,7 @@ header, footer, section, article {
 
 header, footer {
   text-align: center;
-  padding: 50px 0; }
+  padding: 30px 0; }
 
 article {
   margin-bottom: 50px;
@@ -141,11 +141,11 @@ footer {
   font-weight: 400;
   color: #727272;
   font-size: 12px;
-  margin: 50px auto;
+  margin: 0 auto;
   padding-top: 0; }
 
 header.welcome {
-  margin: 0 0 50px;
+  margin: 0 0 30px;
   background: #333333;
   color: #fff;
   color: rgba(255, 255, 255, 0.6);
@@ -169,6 +169,25 @@ header.welcome {
     color: #EAE3CC; }
     header.welcome a:hover, header.welcome a:focus {
       color: #fff; }
+  header.welcome .icons {
+    text-align: center; }
+    header.welcome .icons a {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      text-indent: -9999px;
+      background-image: url(../img/icons.png);
+      background-repeat: no-repeat;
+      opacity: 0.5;
+      margin: 0.5em 0.5em 0; }
+      header.welcome .icons a:hover {
+        opacity: 0.75; }
+      header.welcome .icons a.linkedin {
+        background-position: 0 -24px; }
+      header.welcome .icons a.twitter {
+        background-position: 0 -48px; }
+      header.welcome .icons a.email {
+        background-position: 0 0; }
 
 .meta {
   text-align: center;
