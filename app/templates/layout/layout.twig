@@ -37,7 +37,7 @@
     <p>&copy; 2011-{{ "now"|date("Y") }} <a href="http://richardhinkamp.nl/" target="_blank">Richard Hinkamp</a> - <a href="/sitemap" title="Sitemap">Sitemap</a></p>
 </footer>
 
-{% if app.config.get('general/debug') == true %}
+{% if app.config.get('general/debug') != true %}
     <script type="text/javascript">
 
         var _gaq = _gaq || [];
