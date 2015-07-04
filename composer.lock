@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0030da4773352ec515f8fbc19bbbfea6",
+    "hash": "253fc8340839dcad3d2efa6a7bf27d15",
     "packages": [
         {
             "name": "bolt/bolt",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/richardhinkamp/bolt.git",
-                "reference": "4a91ea74df960c2eee019acea32d628d2b2d4098"
+                "reference": "743bb8bd0ef2199f164f47301ece081990a2fceb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/richardhinkamp/bolt/zipball/4a91ea74df960c2eee019acea32d628d2b2d4098",
-                "reference": "4a91ea74df960c2eee019acea32d628d2b2d4098",
+                "url": "https://api.github.com/repos/richardhinkamp/bolt/zipball/743bb8bd0ef2199f164f47301ece081990a2fceb",
+                "reference": "743bb8bd0ef2199f164f47301ece081990a2fceb",
                 "shasum": ""
             },
             "require": {
@@ -77,7 +77,7 @@
             "support": {
                 "source": "https://github.com/richardhinkamp/bolt/tree/release/1.6"
             },
-            "time": "2015-07-03 13:18:46"
+            "time": "2015-07-04 12:40:38"
         },
         {
             "name": "bolt/dumper",
