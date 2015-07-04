@@ -1,0 +1,10 @@
+{% extends "layout/layout.twig" %}
+
+{% block page_content %}
+    <article>
+        <div class="meta">
+            <h1>Pagina niet gevonden</h1>
+        </div>
+        <p>De gevraagde URL "{{ app.request.getRequestUri }}" kon niet gevonden worden.</p>
+    </article>
+{% endblock %}
