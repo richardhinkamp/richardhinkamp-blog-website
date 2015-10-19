@@ -4,6 +4,6 @@ vendor/
 web/bolt-public/
 web/files/*
 web/theme/
-config/config_local.yml
+app/config/config_local.yml
 web/upload/*
 cache/
