@@ -17,10 +17,10 @@ homepage:
     defaults:
         _controller: 'Bolt\Controllers\Frontend::homepage'
 
-search:
-    path: '/search'
-    defaults:
-        _controller: 'Bolt\Controllers\Frontend::search'
+#search:
+#    path: '/search'
+#    defaults:
+#        _controller: 'Bolt\Controllers\Frontend::search'
 
 preview:
     path: '/preview/{contenttypeslug}'
@@ -36,12 +36,12 @@ contentlink:
     requirements:
         contenttypeslug: 'Bolt\Controllers\Routing::getAnyContentTypeRequirement'
 
-taxonomylink:
-    path: '/{taxonomytype}/{slug}'
-    defaults:
-        _controller: 'Bolt\Controllers\Frontend::taxonomy'
-    requirements:
-        taxonomytype: 'Bolt\Controllers\Routing::getAnyTaxonomyTypeRequirement'
+#taxonomylink:
+#    path: '/{taxonomytype}/{slug}'
+#    defaults:
+#        _controller: 'Bolt\Controllers\Frontend::taxonomy'
+#    requirements:
+#        taxonomytype: 'Bolt\Controllers\Routing::getAnyTaxonomyTypeRequirement'
 
 contentlisting:
     path: '/{contenttypeslug}'

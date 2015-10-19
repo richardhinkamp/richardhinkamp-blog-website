@@ -16,17 +16,11 @@ blogs:
         body:
             type: html
             height: 500px
-    taxonomy: [ tags ]
     record_template: blog-detail.twig
     listing_template: blog-list.twig
     listing_records: 100
     sort: datepublish DESC
     recordsperpage: 10
-    rss:
-      enabled: true
-      feed_records: 10
-      feed_template: rss.twig
-      content_length: 250
 
 #pages:
 #    name: Pages

@@ -17,21 +17,21 @@
 # - 'anonymous': this role is automatically assigned at all times, even when
 #   no user is logged in at all.
 roles:
-    editor:
-        description: This user can edit some content.
-        label: Editor
+#    editor:
+#        description: This user can edit some content.
+#        label: Editor
     chief-editor:
         description: This user can edit any content in the system.
-        label: Chief Editor
-    admin:
-        description: User-level administrator.
-        label: Administrator
-    developer:
-        description: Developer access. Only required to change system-level settings.
-        label: Developer
-    guest:
-        description: This user can log on, but is not allowed to edit any content.
-        label: Guest Editor
+        label: Editor
+#    admin:
+#        description: User-level administrator.
+#        label: Administrator
+#    developer:
+#        description: Developer access. Only required to change system-level settings.
+#        label: Developer
+#    guest:
+#        description: This user can log on, but is not allowed to edit any content.
+#        label: Guest Editor
 
 # Role hierarchy settings
 roles-hierarchy:
