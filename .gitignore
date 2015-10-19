@@ -3,7 +3,7 @@ vendor/
 .sass-cache/
 web/bolt-public/
 web/files/*
-web/kcfinder
+web/theme/
 config/config_local.yml
 web/upload/*
 cache/
