@@ -1,0 +1,36 @@
+<ul class="blogs">
+    <%
+    function meta( content ) {
+        var title = content.match(/<h1>(.*?)<\/h1>/);
+        var date = content.match(/<strong>(.*?)<\/strong>/);
+        if( title && date ) {
+            return {
+                title: title[1],
+                date: date[1],
+            };
+        }
+    }
+    var blogList = [];
+    for(var i in public.blogs._contents) {
+        var blog = public.blogs._contents[i];
+        if ( blog.match(/\.html$/) ) {
+            var data = meta(partial("blogs/" + blog));
+            if ( data ) {
+                data.slug = blog;
+                blogList.push(data);
+            }
+        }
+    }
+    blogList.sort(function(a, b) {
+        var aDate = parseInt(a.date.split('-').reverse().join(''));
+        var bDate = parseInt(b.date.split('-').reverse().join(''));
+        return bDate - aDate;
+    });
+    blogList = blogList.slice(0, amount);
+    %>
+    <% blogList.forEach(function(blog) { %>
+    <li>
+        <a href="/blogs/<%= blog.slug %>"><%= blog.date %> <%= blog.title %></a>
+    </li>
+    <% }); %>
+</ul>

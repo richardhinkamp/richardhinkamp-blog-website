@@ -1,0 +1,65 @@
+<article>
+    <div class="meta">
+        <h1>Rabobank euro incasso adresboek CSV export</h1>
+
+        <p class="date">
+            Geplaatst op <strong>26-06-2015</strong>
+        </p>
+    </div>
+    <p>Ik wou het adresboek van euro incasso in Rabobank internetbankieren exporteren om het te controleren met de
+        ledenadministratie. Dit kan niet volgens de Rabobank, toch wel! Het is niet heel gebruiksvriendelijke, maar het
+        werkt. Login op internetbankieren in Chrome (andere browser heb ik niet geprobeerd, kan best zijn dat het dan
+        ook werkt) en ga naar het adresboek van euro incasso. Als je daar hebt opent je de console (F12) en plakt daarin
+        de volgende code:
+    </p>
+<pre>function convertToCsv(objArray) {
+    var str = '';
+    objArray.forEach(function(obj) {
+        var prop;
+        if( str == '' ) {
+            // headers
+            var header = '';
+            for(prop in obj) {
+                if( header != '') {
+                    header += ';';
+                }
+                header += prop;
+            }
+            str += header + '\n';
+        } else {
+            str += '\n';
+        }
+        var line = '';
+        for(prop in obj) {
+            if( line != '') {
+                line += ';';
+            }
+            line += obj[prop].toString();
+        }
+        str += line;
+    });
+
+    return str;
+}
+
+var rows = document.querySelectorAll('.ra_bh_sorttable tbody tr');
+var rowsArr = Array.prototype.slice.call(rows);
+var data = [];
+rowsArr.forEach(function(row) { 
+    var obj = {};
+    obj.naam = row.querySelector('.firstcol').innerText;
+    obj.rekeningnummer = row.querySelector('.secondcol').innerText;
+    obj.bedrag = row.querySelector('.fifthcol').innerText;
+    obj.kenmerk = row.querySelector('.checkboxcol .rb_mandateReference').value;
+    obj.datum = row.querySelector('.checkboxcol .rb_dateSigned').value;
+    data.push(obj);
+});
+console.log(convertToCsv(data));
+
+</pre>
+    <p>En dan staat er een stuk tekst (CSV) dat je kunt kopiëren en in Excel of iets dergelijks kunt plakken.
+    </p>
+
+    <p>Ik vond het handig, hopelijk hebben meer mensen er wat aan.
+    </p>
+</article>

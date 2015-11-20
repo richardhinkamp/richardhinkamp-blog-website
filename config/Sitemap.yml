@@ -1,7 +1,0 @@
-# sitemap settings
-
-template: sitemap.twig
-xml_template: assets/sitemap_xml.twig
-
-ignore_contenttype:
-  - quote

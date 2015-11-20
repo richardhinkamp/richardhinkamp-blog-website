@@ -1,0 +1,23 @@
+{
+  "name": "richardhinkamp-blog-website",
+  "version": "1.0.0",
+  "description": "Richard Hinkamp Personal Blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richardhinkamp/richardhinkamp-blog-website.git"
+  },
+  "author": "Richard Hinkamp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/richardhinkamp/richardhinkamp-blog-website/issues"
+  },
+  "homepage": "https://github.com/richardhinkamp/richardhinkamp-blog-website#readme",
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "harp": "^0.20.0"
+  }
+}

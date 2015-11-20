@@ -1,4 +1,6 @@
-website
+Personal blog
 =======
 
-My website at richard.hinkamp.nl. Just some personal stuff and testing with [Bolt.cm](http://bolt.cm)
+My blog at [blog.richardhinkamp.nl](http://blog.richardhinkamp.nl/).
+
+Created with [HarpJS](http://harpjs.com/)
