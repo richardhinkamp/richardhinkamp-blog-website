@@ -4,6 +4,7 @@
   "description": "Richard Hinkamp Personal Blog",
   "main": "index.js",
   "scripts": {
+    "compile": "harp compile site www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
