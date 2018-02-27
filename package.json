@@ -1,22 +1,26 @@
 {
-    "name": "richardhinkamp-blog-website",
-    "version": "1.0.0",
-    "description": "Richard Hinkamp Personal Blog",
-    "scripts": {
-        "build": "harp compile site www",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/richardhinkamp/richardhinkamp-blog-website.git"
-    },
-    "author": "Richard Hinkamp",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/richardhinkamp/richardhinkamp-blog-website/issues"
-    },
-    "homepage": "https://github.com/richardhinkamp/richardhinkamp-blog-website#readme",
-    "dependencies": {
-        "harp": "^0.24.1"
-    }
+  "name": "richardhinkamp-blog-website",
+  "version": "1.0.0",
+  "description": "Richard Hinkamp Personal Blog",
+  "scripts": {
+    "build": "harp compile site www",
+    "serve": "http-server www/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richardhinkamp/richardhinkamp-blog-website.git"
+  },
+  "author": "Richard Hinkamp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/richardhinkamp/richardhinkamp-blog-website/issues"
+  },
+  "homepage": "https://github.com/richardhinkamp/richardhinkamp-blog-website#readme",
+  "dependencies": {
+    "harp": "^0.24.1"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
 }
