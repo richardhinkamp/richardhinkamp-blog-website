@@ -260,6 +260,24 @@ ul.quotes li {
     }
 }
 
+p.note {
+    font-style: italic;
+    font-size: 90%;
+}
+
+blockquote.email {
+    font-size: 90%;
+    margin: 5px 20px;
+
+    .from {
+        font-weight: bold;
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+}
+
 @media print, screen and (max-width: 640px) {
     body {
         font-size: 15px;
